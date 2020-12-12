@@ -1,0 +1,33 @@
+.normal {
+    font-weight: bold; 
+}
+
+.button {
+    background-color: #b6df14;
+    padding: 4px;
+    margin-right: 10px;
+}
+
+.dim {
+    opacity: 40%;  
+}
+
+table {
+    padding: 50px;
+    margin-right: 20px;
+    
+}
+
+table, th {
+    border: 2px solid rgb(24, 171, 230);
+
+}
+
+td {
+    border: 1px solid #9810f3;
+    text-align: center;    
+}
+
+span {
+    font-size: 28pt;
+}
