@@ -1,1 +1,1 @@
-# Itgelt-Batmyagmar
+# Itgelt-Batmyagmar (Web programming)
