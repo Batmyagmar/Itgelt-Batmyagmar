@@ -1,77 +1,68 @@
-## What is this?
-This is a MERN stack web application that you can add to your portfolio and mess around with.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Demo: https://mernweatherapp.herokuapp.com/
+## Available Scripts
 
-**Weathering With You** is a weather web app to get the current weather data of the zip code you submit into the form.
- Consists of 4 main components
- - the header at the top
- - the form to input your zipcode, choose the temperature metric, and save button
- - [left-hand panel] Display weather data
- - [right-hand panel] 10 most recent weather data queries
+In the project directory, you can run:
 
-## Setup
-Prereq apps to have downloaded
-- [Node](https://nodejs.org/en/) 
-- [git](https://git-scm.com/downloads)
+### `npm start`
 
-Clone the repo:
-```
-git clone https://github.com/JinKim7/mern-weather-app.git
-```
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Download all npm packages for both client/server
-```javascript
-npm run setup
-```
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-### .env file
-Need two creds. Weather api and mongo connection string
+### `npm test`
 
-#### Mongo
-Log into [mongo](https://account.mongodb.com/account/login)
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-On the left-hand sidebar, you should see **Database Access**. Click on it and make a new user for yourself.  
-1. Click on `Add New Database User`
-2. Create a new user by filling out `username` and `password`  
-(this will be different creds than your actual mongo account. This is gives a user access to this particular database.)
+### `npm run build`
 
-On the left-hand sidebar, you should see **Network Access**.  
-Make a new access point for your IP address to get permission on using your mongodb.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Now create a `.env` file in your root directory of `mern-weather-app` and dynamically add this to your `.env`
-```javascript
-DB=mongodb+srv://<username>:<password>@<cluster-id>.mongodb.net/test?retryWrites=true&w=majority
-```
-To get the cluster ID, go to **Clusters** and click on **Connect > Connect your application** to get a more detailed view of how the DB string should look like. 
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-#### Weather API
-Make an account at   and go to the [api keys](https://home.openweathermap.org/api_keys) section.
-Copy/pasta that key to the .env file using `WEATHER_KEY` as your key
-```
-WEATHER_KEY=1234567890asdfjkl
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Run Locally
-**Note:** The mongo connection is commented out in `server.js`. Just uncomment the code block to connect to mongo:
-```javascript
-// mongoose.connect(process.env.DB, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true
-// }).then(() => console.log('MongoDB Connected...')).catch(err => console.log(err));
-```
+### `npm run eject`
 
-You can now run your local.  
-Go to your root directory and start your web app:
-```javascript
-npm run dev
-```
-This is command will your client and server concurrently. 
-- client - localhost:3000
-- server - localhost:5000
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-The service will auto-watch both frontend and backend, so no need to restart to see your changes.  
-Once you save your changes, it'll auto-refresh to view your changes.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Deploy
-Connect this repo to heroku and it'll auto deploy once you update master, if that's the branch heroku is watching to auto deploy.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
